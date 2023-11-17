@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToDoAppCompose" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/purple_500</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <item name="colorPrimary">@color/indigo_700</item>
+        <item name="colorPrimaryVariant">@color/indigo_700_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/indigo_700</item>
+        <item name="colorSecondaryVariant">@color/indigo_700_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+
+        <item name="backgroundColor">@color/white</item>
+
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+
+        <!-- Customize your theme here. -->
+    </style>
+
+
+<!--    Since we can't have white color for navigation bar buttons for api pre 27,
+        we put a dark color on the navigation bar instead -->
+    <style name="navigationBarThemePreApi27">
+        <item name="android:navigationBarColor" >@color/indigo_700</item>
+    </style>
+
+    <!--  The background color for the navigation bar is white and the buttons are set to grey
+     with the property windowLightNavigationBar set to false -->
+    <style name="navigationBarTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor" >?attr/backgroundColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27" >true</item>
+    </style>
+
+    <style name="Theme.ToDoAppCompose.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ToDoAppCompose.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ToDoAppCompose.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

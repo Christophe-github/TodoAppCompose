@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToDoAppCompose" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/indigo_200</item>
+        <item name="colorPrimaryVariant">@color/indigo_200_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/indigo_200</item>
+        <item name="colorSecondaryVariant">@color/indigo_200_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+        <item name="backgroundColor">#FF202020</item>
+
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>-->
+
+    </style>
+
+    <style name="navigationBarThemePreApi27">
+        <item name="android:navigationBarColor" >@color/indigo_700_dark</item>
+    </style>
+
+    <style name="navigationBarTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+
+        <item name="android:navigationBarColor" >?attr/backgroundColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27" >false</item>
+    </style>
+
+</resources>

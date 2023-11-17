@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDoAppCompose</string>
+
+    <string name="sort_default">Default</string>
+    <string name="sort_priority">Priority</string>
+    <string name="sort_deadline">Deadline</string>
+
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_none">None</string>
+    <string name="priority_all">All</string>
+
+    <string name="completed">Completed</string>
+    <string name="uncompleted">Uncompleted</string>
+    <string name="completed_all">All</string>
+
+
+
+
+</resources>
